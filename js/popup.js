@@ -12,3 +12,5 @@ function(data){
     console.log(data)
 
 })
+
+//http://api.openweathermap.org/data/2.5/onecall?lat=52.546822&lon=19.706381&lang=pl&appid=4e9669d0699143b043c5249aefb30374
