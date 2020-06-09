@@ -16,7 +16,7 @@ body{
     width: 400px;
     height: 200px;
     border: 2px solid orange;
-    display: inline-grid;
+    display: -moz-inline-grid;
     justify-content: space-around;
 }
 .sensor-container{
