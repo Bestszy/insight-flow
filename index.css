@@ -1,5 +1,11 @@
+@font-face{
+    src: url(font/Lato-selected.ttf.txt);
+    font-family: lato;
+}
 *{
     box-sizing: border-box;
+    font-family: lato;
+    font-size: 11px;
     padding: 0;
     margin: 0;
 }
@@ -10,15 +16,31 @@ body{
     width: 400px;
     height: 200px;
     border: 2px solid orange;
+    display: inline-grid;
     justify-content: space-around;
-    padding: 100px;
 }
+.sensor-container{
+    background-color: rgb(40, 40, 255);
+    width: 200px;
+    height: 200px;
+
+}
+.weather-container{
+    background-color: rgb(90, 255, 40);
+    width: 200px;
+    height: 200px;
+
+}
+
 .weather {
     width: 100px;
     height: 100px;
     padding:15px;
-    height: 300px;
-    background-color:darkgray;
+    border: BLACK 1px solid;
+}
+.current{
+    height: 200px;
+
 }
 
 .icon{
