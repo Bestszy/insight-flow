@@ -34,7 +34,7 @@ function(data){
     $('.humidityTomAft').append(data.daily[2].humidity);
     $('.numTomAft').append(data.daily[2].weather[0].icon);
     /////// half + 12
-    var icon = "https://openweathermap.org/img/w/" + data.hourly[12].weather[0].icon + ".png";
+    var icon = "https://openweathermap.org/img/w/" + data.hourly[12].weather[0].icon + ".png"; //icon
     var apiTime = new Date(data.hourly[12].dt*1000);
     $('.iconHalf').attr('src', icon);
     $('.timeHalf').append(apiTime);//eg apiTime.getHours() get houer
@@ -42,9 +42,9 @@ function(data){
     $('.tempHalf').append(data.hourly[12].temp);
     $('.feelsHalf').append(data.hourly[12].feels_like);
     $('.humidityHalf').append(data.hourly[12].humidity);
-    $('.numHalf').append(data.hourly[12].weather[0].icon);
+    $('.numHalf').append(data.hourly[12].weather[0].icon);//num of the icon
     /////// half + 24
-    var icon = "https://openweathermap.org/img/w/" + data.hourly[24].weather[0].icon + ".png";
+    var icon = "https://openweathermap.org/img/w/" + data.hourly[24].weather[0].icon + ".png"; //icon
     var apiTime = new Date(data.hourly[24].dt*1000);
     $('.iconEntire').attr('src', icon);
     $('.timeEntire').append(apiTime);//eg apiTime.getHours() get houer
@@ -52,7 +52,7 @@ function(data){
     $('.tempEntire').append(data.hourly[24].temp);
     $('.feelsEntire').append(data.hourly[24].feels_like);
     $('.humidityEntire').append(data.hourly[24].humidity);
-    $('.numEntire').append(data.hourly[24].weather[0].icon);
+    $('.numEntire').append(data.hourly[24].weather[0].icon);//num of the icon
 
 
     console.log(data)

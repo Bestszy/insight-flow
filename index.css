@@ -10,37 +10,57 @@
     margin: 0;
 }
 body{
-    background-color: rgb(70, 80, 70)
+    background-color: rgb(70, 80, 70);
+    float: right;
+    padding: 10px
 }
 .header{
+    display: flex;
     width: 400px;
     height: 200px;
-    border: 2px solid orange;
-    display: -moz-inline-grid;
-    justify-content: space-around;
 }
 .sensor-container{
-    background-color: rgb(40, 40, 255);
+    /*background-color: rgb(40, 40, 255);*/
     width: 200px;
     height: 200px;
+    color:white;
+    display:grid;
+    grid-template: 100px 100px/100px 100px;
 
+}
+.one{
+    background-color: #153BC1;
+    grid-area: 1/1/2/2;
+}
+.two{
+    background-color: #02218E;
+    grid-area: 2/1/3/2
+    
+}
+.average{
+    background-color: #194CFF;
+    grid-area: 1/2/3/3
 }
 .weather-container{
-    background-color: rgb(90, 255, 40);
     width: 200px;
     height: 200px;
-
+    color:white;
+    display:grid;
+    grid-template: 100px 100px/100px 100px;
 }
 
-.weather {
-    width: 100px;
-    height: 100px;
-    padding:15px;
-    border: BLACK 1px solid;
-}
 .current{
-    height: 200px;
+    grid-area: 1/1/3/2;
+    background-color: #3fce42
+}
+.half{
+    grid-area: 1/2/2/3;
+    background-color: #39A83A
 
+}
+.entire{
+    grid-area: 2/2/3/3;
+    background-color: #33702F
 }
 
 .icon{
