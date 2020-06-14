@@ -4,6 +4,8 @@
 $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=52.546822&lon=19.706381&lang=pl&units=metric&appid=4e9669d0699143b043c5249aefb30374", 
 function(data){
     ///////current
+    var icona = 'icons/03dd.png';
+    $(".icona").attr("src", icona);
     var icon = "https://openweathermap.org/img/w/" + data.current.weather[0].icon + ".png";
     var apiTime = new Date(data.current.dt*1000);
     $('.icon').attr('src', icon);
@@ -53,6 +55,7 @@ function(data){
     $('.feelsEntire').append(data.hourly[24].feels_like);
     $('.humidityEntire').append(data.hourly[24].humidity);
     $('.numEntire').append(data.hourly[24].weather[0].icon);//num of the icon
+
 
 
     console.log(data)
